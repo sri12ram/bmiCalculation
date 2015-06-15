@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BMI Calculator App</title>
+  <meta charset="utf-8">
+  <meta name="description" content="BMI Calculator App">
+  <meta name="author" content="Sriram">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>BMI Calculator App</h1>
+    <h2>Coursera - Developing Data Products Course (Data Science Specialization)</h2>
+    <p>Sriram<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Application Overview</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Healthcare professionals around the world often use <strong>Body Mass Index (BMI)</strong> when determining whether patients are underweight, healthy weight, overweight or clinically obese. People who are clinically obese have a greater risk of developing diabetes, stroke, some cancer, and cardiovascular diseases.</p>
+
+<p>The App calculates a person&#39;s BMI based on his / her Height &amp; Weight.  While BMI can be calculated in <em>Metric</em> or <em>Imperial</em> scale, the App currently supports Metric scale only.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>Using the App</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>To use the App, please go to <a href="https://sri12ram.shinyapps.io/bmiCalculation">BMI Calculator</a>.
+Height and Weight can be input in the textboxes on the left side of the page.  The number can be directly typed in the textbox or the arrows used to increase / decrease.  </p>
+
+<p>Here are the steps...<br>
+1. Input your Height (in Metres) and Input Weight (in Kilograms)<br>
+2. Then, click on the <strong>Submit</strong> button<br>
+3. Your BMI prediction is shown on the left side of the page  </p>
+
+<p><img src="assets/img/bmi-input.jpg" alt="bmi input"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>How it Calculates BMI</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The formula for BMI is</p>
+
+<p>\[\frac{weight}{height^2}\]</p>
+
+<p>So to calculate the BMI of a person whose Height is 5 feet 10 inches (1.778 metres) and Weight is 200 pounds (90.7185 kilograms),  we can use the web application and run the following.</p>
+
+<pre><code class="r">90.7185 / (1.778 * 1.778)
+</code></pre>
+
+<pre><code>## [1] 28.69673
+</code></pre>
+
+<p>It&#39;s quite easy to work out that the BMI is 28.69.  We can then check this against the chart given in the next page to see where we fit.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Reference</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="assets/img/bmi-class.jpg" alt="bmi classification"></p>
+
+<p>Thanks for using the BMI Calculation App.  Hope it is helpful.</p>
+
+<p><strong>References:</strong></p>
+
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Body_mass_index">Wikipedia page for BMI</a></li>
+<li><a href="http://www.medicalnewstoday.com/info/obesity/what-is-bmi.php">Medical News Today</a></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Application Overview'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Using the App'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='How it Calculates BMI'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Reference'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <!-- <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script> -->
+  <script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
+</script>
+<!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
